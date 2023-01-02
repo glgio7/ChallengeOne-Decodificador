@@ -7,9 +7,17 @@
     font-family: "Nunito", sans-serif;
 }
 
+body {
+    color: #fff;
+    background-color: #202020;
+    width: 100vw;
+    height: 100%;
+}
+
 img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 header {
@@ -20,24 +28,25 @@ header {
 }
 
 h1 {
-    width: 330px;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 60px;
 }
 
-h1 img {
-    object-fit: contain;
+.decoder{
+    width: 200px;
+}
+.alura{
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
 }
 
 h2 {
     margin: 1rem 0;
     font-size: 1.25rem;
-}
-
-body {
-    color: #fff;
-    background-color: #202020;
-    max-width: 100vw;
-    height: 100%;
 }
 
 .container {
@@ -129,9 +138,20 @@ button:active {
 
 /* //////////// Mobile //////////// */
 @media screen and (max-width: 768px) {
-    header {
-        justify-content: center;
+    header{
+        height: 120px;
     }
+    h1 {
+        height: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .decoder{
+        width: 80%;
+        height: 60px;
+    }
+
     .container {
         flex-direction: column;
         padding: 1rem;
