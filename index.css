@@ -10,6 +10,7 @@
 body {
     color: #fff;
     background-color: #202020;
+    
     width: 100vw;
     height: 100%;
 }
@@ -17,20 +18,25 @@ body {
 img {
     width: 100%;
     height: 100%;
+    
     object-fit: contain;
 }
 
 header {
     background-color: #151515;
+    
     height: 72px;
+    
     display: flex;
     align-items: center;
 }
 
 h1 {
     margin-left: 2rem;
+    
     display: flex;
     align-items: center;
+    
     width: 100%;
     height: 60px;
 }
@@ -40,42 +46,53 @@ h1 {
 }
 .alura{
     border-radius: 10px;
+    
     width: 48px;
     height: 48px;
 }
 
 h2 {
     margin: 1rem 0;
+    
     font-size: 1.25rem;
 }
 
 .container {
     margin: 0 auto;
     padding: 1rem 2rem;
+    
     display: flex;
     justify-content: space-between;
 }
 
 .text-box {
     text-align: center;
+    
     display: flex;
     flex-direction: column;
+    
     width: 70%;
 }
 
 .result-box {
     text-align: center;
+    
     display: flex;
     flex-direction: column;
+    
     width: 25%;
 }
 
 textarea {
     border-radius: 10px;
+    
     height: 60vh;
     width: 100%;
+    
     padding: .5rem;
+    
     font-size: 1.25rem;
+    
     background-image: url('./img/empty_text.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -92,23 +109,29 @@ textarea.active {
 
 button {
     margin-top: 3px;
+    
     cursor: pointer;
     border: none;
-    background-color: #101010;
-    color: #fff;
     border-radius: 6px;
+    
+    color: #fff;
+    background-color: #101010;
+    
     width: 49%;
     height: 3rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all ease 150ms;
+    
+    transition: all 500ms;
 }
 
 
 
-button:active {
-    background: radial-gradient(rgba(50, 139, 255, 0.75), rgba(0, 81, 255, 0.75));
+button:hover {
+    background-color: rgba(0, 220, 60, .75);
+    
     opacity: .85;
 }
 
@@ -123,7 +146,7 @@ button:active {
 }
 
 #copy:focus {
-    background: radial-gradient(rgba(50, 139, 255, 0.75), rgba(0, 81, 255, 0.75));
+    background-color: rgba(255,255,255, .25);
 }
 
 /* /////////// GOOGLE ICONS ////////// */
@@ -142,8 +165,10 @@ button:active {
         height: 120px;
     }
     h1 {
-        height: 100%;
         margin-left: 0;
+        
+        height: 100%;
+        
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -154,22 +179,30 @@ button:active {
 
     .container {
         flex-direction: column;
+        
         padding: 1rem;
     }
 
     .result-box {
         text-align: center;
+        
         display: flex;
         flex-direction: column;
+        
         width: 100%;
+        
         margin: 0 auto;
     }
 
     .text-box {
         text-align: center;
+        
         display: flex;
+        
         flex-direction: column;
+        
         width: 100%;
+        
         margin: 0 auto;
     }
 }
